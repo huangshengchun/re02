@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="wideth=device-width,initial-scale=1">
+    <title>我的第二个网站</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /**{
+        border: 1px solid black;
+      }*/
+      .yinYing{
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+        rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+        rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1{
+        flex: 1
+      }
+      .column{
+        flex-direction: column;
+      }
+      .mg8{
+        margin: 8px;
+      }
+      .mgr8{
+        margin-right: 8px;
+      }
+      .mgt8{
+        margin-top: 8px;
+      }
+      .daoHang{
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(190,190,190);
+        font-size: 14px;
+        color: #666;
+      }
+      @media (max-width: 600px){
+        .ceBian {
+          display: none;
+        }
+        .neiRong {
+          flex-direction: column;
+        }
+        .shuJuQu {
+          flex-direction: column;
+        }
+        .youQu {
+          margin-left: 8px;
+        }
+        .shuJu {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+        .container{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 90px;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px;z-index: 2;" class="ceBian baiSe yinYing">
+        <!-- 头像栏 -->
+        <div style="padding: 10px;align-items: center;justify-content: center;border-bottom: 1px solid #999;" class="flex">
+          <img src="https://i.hd-r.cn/67ed300dcf496f30c1145cb6132633b1.jpg"
+          alt="黄胜春"
+          width="40px"
+          height="40px"
+          />
+          <div style="margin-left: 10px;">黄胜春</div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="flex1">
+            <div class="daoHang">
+              <a href="https://huangshengchun.com/">关于我</a>
+            </div>
+            <div class="daoHang">
+              <a href="https://huangshengchun.com/">其他个人网站</a>
+            </div>
+            <div class="daoHang">推荐使用PC端</div>
+        </div>
+    </div>
+    <!-- 主区域 -->
+    <div style="text-align: center;width: 85%;" class="flex1 flex column">
+        <!-- 头部栏 -->
+        <div style="height: 90px;z-index: 1;font-size: 30px;font-weight: bold;margin-left: 1px; 
+        width: 100%;background-color: #eee;line-height: 80px;"
+         class="baiSe yinYing container">
+        HuAngSC栖息地
+        </div>
+        <!-- 内容区 -->
+        <div style="overflow: auto" class="neiRong flex1 flex">
+          <!-- 左区 -->
+          <div style="flex: 3" class="flex column mg8">
+            <!-- 数据区 -->
+            <div class="flex shuJuQu">
+              <!-- 数据块 -->
+              <div style="height: 100px;line-height: 15px;" class="shuJu flex1 baiSe mgr8 yinYing">
+                <p>广告位招租</p>
+                <p>普通套餐0.06r/月</p>
+                <p>VIP套餐0.6r/月</p>
+              </div>
+              <div style="height: 100px;line-height: 15px;" class="shuJu flex1 baiSe yinYing mgr8">
+                <p>广告位招租</p>
+                <p>普通套餐0.06r/月</p>
+                <p>VIP套餐0.6r/月</p>
+              </div>
+              <div style="height: 100px;line-height: 15px;" class="shuJu flex1 baiSe yinYing mgr8">
+                <p>广告位招租</p>
+                <p>普通套餐0.06r/月</p>
+                <p>VIP套餐0.6r/月</p>
+              </div>
+              <div style="height: 100px;line-height: 15px;" class="shuJu flex1 baiSe yinYing">
+                <p>广告位招租</p>
+                <p>普通套餐0.06r/月</p>
+                <p>VIP套餐0.6r/月</p>
+              </div>
+            </div>
+            <!-- 列表区 -->
+            <div class="flex column">
+              <!-- 列表项 -->
+              <div style="height: 160px;line-height: 19px;" class="baiSe mgt8 yinYing">
+               <img src="https://i.hd-r.cn/868ba0fe4d8c8560dbc8f1fa3fe2e174.png"
+                alt="四川大学校徽"
+                width="75px"
+                height="75px"
+                />
+                <div style="text-align: center ;">四川大学(Sichuan University)，简称“川大”，位于四川省成都市，是一所教育部直属、中央直管副部级的全国重点大学。该校属于国家“双一流”(A类)、“211工程”、“985工程”的重点建设高校。四川大学的建校历史悠久,起源于1896年的四川中西学堂,它是西南地区最早的近代高等学校。此外，四川大学还拥有原成都科学技术大学和新华西医科大学这两所全国重点大学的血统,分别成立于新中国院系调整时期和多科型工科院校。2000年,四川大学与原华西医科大学合并，组成了新的四川大学。</div>
+              </div>
+              <div style="height: 160px;" class="baiSe yinYing mgt8">
+                <img src="https://i.hd-r.cn/377540e20eabd99f4520da1b9c358477.jpg"
+                alt="四川大学望江校区"
+                width="600px"
+                height="150px"
+                />
+              </div>
+              <div style="height: 160px;" class="baiSe yinYing mgt8">
+                <img src="https://i.hd-r.cn/0a938ea8e6d453df671f491089d7d92d.png"
+                alt="四川大学华西校区"
+                width="600px"
+                height="150px"
+                />
+              </div>
+              <div style="height: 160px;line-height: 30px;" class="baiSe mgt8 yinYing">
+                <p>广告位招租</p>
+                <p>普通套餐0.09r/月</p>
+                <p>VIP套餐0.9r/月</p>
+              </div>
+              <div style="height: 160px;line-height: 30px;" class="baiSe mgt8 yinYing">
+                <p>广告位招租</p>
+                <p>普通套餐0.09r/月</p>
+                <p>VIP套餐0.9r/月</p>
+              </div>
+              <div style="height: 160px;line-height: 30px;" class="baiSe mgt8 yinYing">
+                <p>广告位招租</p>
+                <p>普通套餐0.09r/月</p>
+                <p>VIP套餐0.9r/月</p>
+              </div>
+            </div>
+          </div>
+          <!-- 右区 -->
+          <div style="flex: 1" class="youQu flex column mgr8 mgt8">
+            <!-- 提示区 -->
+            <div style="height: 150px;font-size: 18px;" class="baiSe yinYing">
+            <p>详情添加QQ:1952437721</p>
+            <p>详情添加微信:wxid_oennflgckgpn12</p>
+            </div>
+            <!-- 消息区 -->
+            <div style="height: 300px;font-size: 30px;line-height: 15px;color: rgb(225, 20, 20);" class="baiSe yinYing mgt8">
+            <p>至尊VIP广告区</p>
+            <p>不要998r</p>
+            <p>不要888r</p>
+            <p>只要8.8r</p>
+            <p>心动不如行动</p>
+            <p>抓紧订购</p>
+            </div>
+          </div>
+        </div>
+   </div>
+</body>
+</html>
